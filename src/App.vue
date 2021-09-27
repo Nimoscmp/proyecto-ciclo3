@@ -4,12 +4,22 @@
 
 <script>
 
-import Header from './components/Header'
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Services from './components/Services';
+import Reviews from './components/Reviews';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Home,
+    About,
+    Services,
+    Reviews,
+    Footer
   }
 }
 </script>
