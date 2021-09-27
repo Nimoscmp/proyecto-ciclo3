@@ -1,0 +1,46 @@
+<template>
+    <section class="home">
+
+        <p class="home__welcome">Bienvenido</p>
+        <h1 class="h1">Somos Javalovers</h1>
+        <p class="home__info">Podrás encontrar y aprender todo lo referente al lenguaje de Java de forma gratuita</p>
+
+        <form action="" class="home__form">
+            <input type="email" name="email" id="email" class="home__input" placeholder="Ingresa tu email">
+            <button type="submit" class="btn btn--primary home__btn">Obtener mayor información</button>
+        </form>
+
+        <p class="home__sub-info">Contamos con +3000 especializados</p>
+
+        <div class="home__wrapper">
+            <div class="home__options">
+                <span class="home__icon-wrapper">
+
+                </span>
+                <h3 class="h3 home__options-title">
+                    Información actualizada
+                </h3>
+                <p class="home__options-info">Podrás obtener información actualizada acerca de Java</p>
+            </div>
+            <div class="home__options">
+                <span class="home__icon-wrapper">
+
+                </span>
+                <h3 class="h3 home__options-title">
+                    +300 Documentaciones
+                </h3>
+                <p class="home__options-info">Documentaación a la mano para facilitar el aprendizaje</p>
+            </div>
+            <div class="home__options">
+                <span class="home__icon-wrapper">
+
+                </span>
+                <h3 class="h3 home__options-title">
+                    100% virtual
+                </h3>
+                <p class="home__options-info">Accede desde cualquier parte del mundo</p>
+            </div>
+        </div>
+
+    </section>
+</template>
