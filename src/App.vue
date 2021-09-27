@@ -1,5 +1,10 @@
 <template>
-  <Header />
+  <Header/>
+  <Home/>
+  <About/>
+  <Services/>
+  <Reviews/>
+  <Footer/>
 </template>
 
 <script>
