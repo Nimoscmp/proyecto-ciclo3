@@ -13,7 +13,7 @@
       </ul>
     </nav>
 
-    <button type="button" class="btn btn--secondary">Ingresar</button>
+    <button type="button" class="btn btn--secondary header__btn">Ingresar</button>
   </header>
 </template>
 

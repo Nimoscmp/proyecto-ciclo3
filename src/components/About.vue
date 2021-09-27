@@ -11,7 +11,7 @@
                 JavaLovers
             </h2>
             <p class="text about__info">Somos un equipo de desarrolladores que buscamos enseñar de forma gratuita y asertiva el lenguaje de programación Java, sin importar la experiencia previa que tengas.</p>
-            <button type="button" class="btn btn--alternative">Ingresar</button>
+            <button type="button" class="btn btn--alternative about__btn">Ingresar</button>
         </div>
     </section>
 </template>
