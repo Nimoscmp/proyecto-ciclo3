@@ -1,0 +1,14 @@
+.h1 {
+    font-family: var(--font-primary);
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+}
+
+.text--light {
+    color: var(--light-color);
+}
+
+.text--dark {
+    color: var(--dark-color);
+}

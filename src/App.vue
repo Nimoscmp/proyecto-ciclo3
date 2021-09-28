@@ -42,3 +42,5 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<style src="./assets/styles.css"></style>

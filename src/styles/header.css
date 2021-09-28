@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  height: 5.5rem;
+  background-color: var(--primary-color);
+}
+
+.header-desktop .header-desktop__logo {
+  display: inline-block;
+}
+
+.header-desktop .header-desktop__logo .fa-layer-group{
+  color: var(--secondary-color);
+}
+
+.header-desktop .header-desktop__title {
+  display: inline-block;
+  font-family: var(--font-secondary);
+  font-size: var(--font-m);
+}
+
+.header-desktop__nav .header-desktop__list {
+  list-style: none;
+}
