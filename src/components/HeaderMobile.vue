@@ -1,5 +1,5 @@
 <template>
-  <header class="header header-mobile">
+  <header class="header header-mobile" style="display: none;">
 
     <span class="header-mobile__menu">
       <i class="fas fa-bars"></i>

@@ -4,11 +4,12 @@
   background-color: var(--primary-color);
 }
 
-.header-desktop .header-desktop__logo {
+.header-desktop__logo {
   display: inline-block;
+  margin: 0 var(--margin-sxs);
 }
 
-.header-desktop .header-desktop__logo .fa-layer-group{
+.header-desktop__logo .fa-layer-group{
   color: var(--secondary-color);
 }
 
@@ -16,8 +17,36 @@
   display: inline-block;
   font-family: var(--font-secondary);
   font-size: var(--font-m);
+  font-weight: 400;
+  letter-spacing: -1px;
 }
 
-.header-desktop__nav .header-desktop__list {
+.header-desktop__nav {
+  display: inline-block;
+}
+
+.header-desktop__list {
+  padding: 0 var(--font-sxs);
   list-style: none;
+}
+
+.header-desktop__list-item {
+  display: inline-block;
+  margin: 0 var(--margin-xs);
+}
+
+.header-desktop__list-link {
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-size: var(--font-s);
+  letter-spacing: -0.4px;
+  color: var(--dark-color);
+}
+
+.header-desktop__list-link:visited {
+  color: var(--dark-color);
+}
+
+.header-desktop__btn {
+  margin: 0 auto;
 }

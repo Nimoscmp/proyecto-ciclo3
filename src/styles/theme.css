@@ -1,14 +1,34 @@
+body {
+  margin: 0;
+}
+
 .h1 {
-    font-family: var(--font-primary);
-    font-size: 70px;
-    font-weight: 700;
-    letter-spacing: -0.045em;
+  font-family: var(--font-primary);
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: -0.045em;
 }
 
 .text--light {
-    color: var(--light-color);
+  color: var(--light-color);
 }
 
 .text--dark {
-    color: var(--dark-color);
+  color: var(--dark-color);
+}
+
+.btn {
+  padding: 10px 40px;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: var(--font-s);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.btn--secondary {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
