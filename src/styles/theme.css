@@ -7,14 +7,28 @@ body {
   background-color: var(--primary-color);
 }
 
+/*  SECTIONS  */
+.section {
+  height: calc(100vh - 5.5rem);
+}
 
-/*  HEADINGS */
+/*  HEADINGS  */
 .h1 {
   margin: var(--margin-s) 0;
   font-family: var(--font-primary);
   font-size: 70px;
   font-weight: 700;
   letter-spacing: -0.045em;
+}
+
+.h2 {
+  margin: var(--margin-s) 0;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.055em;
 }
 
 /*  TEXTS  */
@@ -24,6 +38,15 @@ body {
   font-size: 21px;
   line-height: 36px;
   letter-spacing: -0.4px;
+}
+
+.welcome {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2.81px;
+  text-transform: uppercase;
 }
 
 .text--light {
@@ -54,6 +77,12 @@ body {
 
 .btn--secondary {
   border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn--alternative {
+  border: none;
+  background-color: var(--light-color);
   color: var(--secondary-color);
 }
 

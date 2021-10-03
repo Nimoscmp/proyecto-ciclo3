@@ -4,7 +4,7 @@
     <div class="home__content">
       
       <div class="home__main">
-        <p class="home__welcome">Bienvenido</p>
+        <p class="welcome home__welcome">Bienvenido</p>
         <h1 class="h1">
           Somos PG Learning
         </h1>
