@@ -1,14 +1,14 @@
 <template>
-  <header class="header header-desktop">
-    <span class="header-desktop__logo">
-      <i class="fas fa-layer-group"></i>
-    </span>
-    
-    <h2 class="h2 header-desktop__title">
-      Subtítulo
-    </h2>
-    
+  <header class="header header-desktop"> 
     <nav class="header-desktop__nav">
+      <span class="header-desktop__logo">
+        <i class="fas fa-layer-group"></i>
+      </span>
+      
+      <h2 class="h2 header-desktop__title">
+        Subtítulo
+      </h2>
+
       <ul class="header-desktop__list">
         <li class="header-desktop__list-item">
           <a href="" class="header-desktop__list-link">Quienes somos</a>
