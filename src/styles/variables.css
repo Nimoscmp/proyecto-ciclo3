@@ -15,19 +15,19 @@
   --font-secondary: 'Rubik', sans-serif;
 
   /*  Sizes  */
-  --font-sxs: 10px;
-  --font-xs: 12px;
-  --font-s: 16px;
-  --font-m: 24px;
-  --font-l: 32px;
-  --font-xl: 40px;
-  --font-xxl: 56px;
+  --font-sxs: 0.625rem;
+  --font-xs: 0.75rem;
+  --font-s: 1rem;
+  --font-m: 1.5rem;
+  --font-l: 2rem;
+  --font-xl: 2.5rem;
+  --font-xxl: 3.5rem;
 
-  --margin-sxs: 10px;
-  --margin-xs: 12px;
-  --margin-s: 16px;
-  --margin-m: 24px;
-  --margin-l: 32px;
-  --margin-xl: 40px;
-  --margin-xxl: 56px;
+  --margin-sxs: 0.625rem;
+  --margin-xs: 0.75rem;
+  --margin-s: 1rem;
+  --margin-m: 1.5rem;
+  --margin-l: 2rem;
+  --margin-xl: 2.5rem;
+  --margin-xxl: 3.5rem;
 }

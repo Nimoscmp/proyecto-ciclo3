@@ -21,7 +21,7 @@
   font-family: var(--font-secondary);
   font-size: var(--font-m);
   font-weight: 400;
-  letter-spacing: -1px;
+  letter-spacing: -0.0625rem;
 }
 
 .header-desktop__nav {
