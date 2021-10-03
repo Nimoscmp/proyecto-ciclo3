@@ -1,12 +1,29 @@
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  background-color: var(--primary-color);
+}
+
+
+/*  HEADINGS */
 .h1 {
+  margin: var(--margin-s) 0;
   font-family: var(--font-primary);
   font-size: 70px;
   font-weight: 700;
   letter-spacing: -0.045em;
+}
+
+/*  TEXTS  */
+
+.text {
+  font-family: var(--font-primary);
+  font-size: 21px;
+  line-height: 36px;
+  letter-spacing: -0.4px;
 }
 
 .text--light {
@@ -17,6 +34,7 @@ body {
   color: var(--dark-color);
 }
 
+/*  BUTTONS */
 .btn {
   padding: 10px 40px;
   border-radius: 3px;
@@ -28,7 +46,34 @@ body {
   letter-spacing: -1px;
 }
 
+.btn--primary {
+  border: none;
+  background-color: var(--action-color);
+  color: var(--dark-color);
+}
+
 .btn--secondary {
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
+}
+
+/*  INPUTS */
+.input {
+  width: 275px;
+  height: 58px;
+  border: none;
+  border-radius: 3px;
+  padding: 0 var(--margin-m);
+  background-color: var(--light-color);
+  outline: none;
+}
+
+.input::placeholder {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.9px;
+  color: var(--blue-gray);
 }
