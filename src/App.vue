@@ -1,5 +1,6 @@
 <template>
   <Header/>
+  <HeaderMobile/>
   <Home/>
   <About/>
   <Services/>
@@ -10,6 +11,7 @@
 <script>
 
 import Header from './components/Header';
+import HeaderMobile from './components/HeaderMobile';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
@@ -20,6 +22,7 @@ export default {
   name: 'App',
   components: {
     Header,
+    HeaderMobile,
     Home,
     About,
     Services,
@@ -36,6 +39,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
 }
 </style>
+
+<style src="./assets/styles.css"></style>

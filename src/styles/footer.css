@@ -1,0 +1,45 @@
+.footer {
+  width: 100%;
+  height: 30rem;
+  padding: 3rem 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
+
+.footer__info, .footer__social {
+  width: 30%;
+}
+
+.footer__info {
+  text-align: start;
+}
+
+.footer__info-title {
+  margin: 0;
+}
+
+.footer__info-text {
+  margin: 0;
+  font-size: var(--font-s);
+}
+
+.footer__social-title {
+  margin-top:  0;
+}
+
+.footer__icon {
+  margin: 0 0.5rem;
+}
+
+.fas {
+  font-size: 2rem;
+}
+
+.fab {
+  font-size: 2rem;
+}

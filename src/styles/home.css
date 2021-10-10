@@ -1,0 +1,83 @@
+.home {
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.home__content {
+  width: 100%;
+  display: block;
+}
+
+.home__main {
+  width: 65%;
+  margin: 0 auto var(--margin-m);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__info {
+  margin: var(--margin-sxs) 0;
+}
+
+.home__form{
+  margin: var(--margin-s) 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home__input {
+
+}
+
+.home__btn {
+  width: 13.125rem;
+  height: 3.625rem;
+  margin-left: var(--margin-sxs);
+}
+
+.home__wrapper {
+  margin-top: var(--margin-xxl);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home__options {
+  width: 25%;
+  min-height: 5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.home__options-title, .home__options-info {
+  width: 80%;
+  text-align: left;
+}
+
+.home__options-title {
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.home__options-info {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
+  color: var(--light-gray);
+}
+
+.home__icon-wrapper {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+
+.fas{
+  color: var(--secondary-color);
+} 

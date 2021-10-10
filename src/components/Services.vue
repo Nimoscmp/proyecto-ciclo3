@@ -1,37 +1,50 @@
 <template>
-    <section class="section services">
-        <div class="services__text">
-            <h3 class="h3 services__subtitle">
-                Totalmente gratuitos
-            </h3>
-            <h2 class="h2 services__title">
-                Nuestros Servicios
-            </h2>
-            <p class="text services__info">Actualmente ofrecemos los siguientes servicios que te permitirán dar el primer paso al maravilloso mundo del lenguaje de programación en Java </p>
-            <div class="services__wrapper">
-                <div class="services__options">
-                    <span class="services__icon-wrapper">
+  <section class="section services">
+    <div class="services__text">
+      <div class="services__text-intro">
+        <h3 class="h3 services__subtitle welcome">
+          Totalmente gratuitos
+        </h3>
+        <h2 class="h2 services__title">
+          Nuestros Servicios
+        </h2>
+        <p class="text services__info">Actualmente ofrecemos los siguientes servicios que te permitirán dar el primer paso al maravilloso mundo del lenguaje de programación en Java </p>
+      </div>
 
-                    </span>
-                    <h3 class="h3 services__options-title">
-                        Información actualizada
-                    </h3>
-                    <p class="text services__options-info">Podrás obtener información actualizada acerca de Java</p>
-                </div>
-                <div class="services__options">
-                    <span class="services__icon-wrapper">
+      <div class="services__wrapper">
+        <BoxInfo 
+            iconClass="box-icon fas fa-pencil-alt fa-2x"
+            title="Información actualizada"
+            info="Podrás obtener información actualizada acerca de Java"
+          />
+        <BoxInfo 
+          iconClass="box-icon fas fa-layer-group fa-2x"
+          title="+300 Documentaciones"
+          info="Documentaación a la mano para facilitar el aprendizaje"
+        />
+      </div>
+    </div>
 
-                    </span>
-                    <h3 class="h3 services__options-title">
-                        +300 Documentaciones
-                    </h3>
-                    <p class="text services__options-info">Documentaación a la mano para facilitar el aprendizaje</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="services__img-wrapper">
-            <div class="services__img"></div>
-        </div>
-    </section>
+    <div class="services__img-wrapper">
+      <div class="services__img">
+        <img 
+          src="../assets/service.jpg" 
+          alt="services"
+          class="services__img-img"
+        >
+      </div>
+    </div>
+  </section>
 </template>
+
+<script>
+
+import BoxInfo from './BoxInfo';
+
+export default {
+  name: 'Services',
+  components: {
+    BoxInfo
+  }
+}
+</script>

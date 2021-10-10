@@ -1,0 +1,13 @@
+.box-info__options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box-info__options-title, .box-info__options-info {
+  text-align: start;
+}
+
+.box-info__options-info {
+  margin: 0;
+}

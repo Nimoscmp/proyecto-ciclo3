@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-color);
+}
+
+/*  SECTIONS  */
+.section {
+  height: calc(100vh - 5.5rem);
+}
+
+/*  HEADINGS  */
+.h1 {
+  margin: var(--margin-s) 0;
+  font-family: var(--font-primary);
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+}
+
+.h2 {
+  margin: var(--margin-s) 0;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.055em;
+}
+
+.h2--mini {
+  font-size: 1.5625rem;
+}
+
+.h3 {
+  font-family: var(--font-primary);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 3.5rem;
+  letter-spacing: -0.055em;
+}
+
+/*  TEXTS  */
+
+.text {
+  font-family: var(--font-primary);
+  font-size: 21px;
+  line-height: 36px;
+  letter-spacing: -0.4px;
+}
+
+.welcome {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2.81px;
+  text-transform: uppercase;
+}
+
+.text--light {
+  color: var(--light-color);
+}
+
+.text--dark {
+  color: var(--dark-color);
+}
+
+/*  BUTTONS */
+.btn {
+  padding: 10px 40px;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: var(--font-s);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.btn--primary {
+  border: none;
+  background-color: var(--action-color);
+  color: var(--dark-color);
+}
+
+.btn--secondary {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn--alternative {
+  border: none;
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+}
+
+/*  INPUTS */
+.input {
+  width: 275px;
+  height: 58px;
+  border: none;
+  border-radius: 3px;
+  padding: 0 var(--margin-m);
+  background-color: var(--light-color);
+  outline: none;
+}
+
+.input::placeholder {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.9px;
+  color: var(--blue-gray);
+}

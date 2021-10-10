@@ -1,0 +1,33 @@
+
+:root {
+  /*  Colors  */
+  --primary-color: #e5e5e5;
+  --secondary-color: #258aff;
+  --alternative-color: #192f48;
+  --action-color: #fc593b;
+  --dark-color: #1f1f1f;
+  --light-color: #fff;
+  --light-gray: #666666;
+  --blue-gray: #878B90;
+
+  /*  Fonts  */
+  --font-primary: 'Karla', sans-serif;
+  --font-secondary: 'Rubik', sans-serif;
+
+  /*  Sizes  */
+  --font-sxs: 0.625rem;
+  --font-xs: 0.75rem;
+  --font-s: 1rem;
+  --font-m: 1.5rem;
+  --font-l: 2rem;
+  --font-xl: 2.5rem;
+  --font-xxl: 3.5rem;
+
+  --margin-sxs: 0.625rem;
+  --margin-xs: 0.75rem;
+  --margin-s: 1rem;
+  --margin-m: 1.5rem;
+  --margin-l: 2rem;
+  --margin-xl: 2.5rem;
+  --margin-xxl: 3.5rem;
+}
