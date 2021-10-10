@@ -46,3 +46,15 @@
 .popup__btn {
   height: 58px;
 }
+
+.popup__link-register {
+  margin: var(--margin-s) 0;
+  display: block;
+  text-align: start;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.popup__link-register:visited {
+  color: var(--secondary-color);
+}
