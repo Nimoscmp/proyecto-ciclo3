@@ -29,6 +29,7 @@
               </h3>
               <p class="text home__options-info">Podrás obtener información actualizada acerca de Java</p>
           </div>
+
           <div class="home__options">
               <span class="home__icon-wrapper">
                 <i class="fas fa-layer-group fa-2x"></i>
@@ -38,6 +39,7 @@
               </h3>
               <p class="text home__options-info">Documentaación a la mano para facilitar el aprendizaje</p>
           </div>
+
           <div class="home__options">
               <span class="home__icon-wrapper">
                 <i class="fas fa-desktop fa-2x"></i>

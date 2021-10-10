@@ -12,7 +12,7 @@
 
 .home__main {
   width: 65%;
-  margin: var(--margin-m) auto;
+  margin: 0 auto var(--margin-m);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,7 @@
 
 .home__options {
   width: 25%;
-  height: 8.75rem;
+  min-height: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -66,6 +66,7 @@
 }
 
 .home__options-info {
+  margin: 0;
   font-size: 0.9375rem;
   line-height: 1.75rem;
   color: var(--light-gray);
@@ -77,6 +78,6 @@
   left: 1rem;
 }
 
-.fas {
+.fas{
   color: var(--secondary-color);
-}
+} 
