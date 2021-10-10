@@ -1,0 +1,33 @@
+.popup {
+  width: 40%;
+  height: calc(100vh - 5.5rem);
+  padding: var(--margin-xl);
+  position: fixed;
+  z-index: 1000;
+  top: 5.5rem;
+  right: 0;
+  background-color: var(--light-color);
+}
+
+.popup__title {
+  font-size: var(--font-l);
+}
+
+.popup__input , .popup__btn {
+  width: 100%;
+  margin: var(--margin-s) 0 0 0;
+}
+
+.popup__input {
+  border: 1px solid var(--dark-color);
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.9px;
+}
+
+.popup__btn {
+  height: 58px;
+}

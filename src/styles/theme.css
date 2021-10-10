@@ -35,14 +35,6 @@ body {
   font-size: 1.5625rem;
 }
 
-.h3 {
-  font-family: var(--font-primary);
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 3.5rem;
-  letter-spacing: -0.055em;
-}
-
 /*  TEXTS  */
 
 .text {

@@ -1,4 +1,5 @@
 <template>
+  <PopUp />
   <Header/>
   <HeaderMobile/>
   <Home/>
@@ -10,6 +11,7 @@
 
 <script>
 
+import PopUp from './components/PopUp';
 import Header from './components/Header';
 import HeaderMobile from './components/HeaderMobile';
 import Home from './components/Home';
@@ -21,6 +23,7 @@ import Footer from './components/Footer';
 export default {
   name: 'App',
   components: {
+    PopUp,
     Header,
     HeaderMobile,
     Home,
