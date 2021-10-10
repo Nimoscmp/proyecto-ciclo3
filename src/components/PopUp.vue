@@ -9,7 +9,10 @@
     <h2 class="h2 popup__title">
       {{ title }}
     </h2>
-    <form action="" class="form" v-on:submit.prevent="handleLogin">
+    <form 
+      action="" 
+      class="form" 
+      v-on:submit.prevent="handleLogin">
       <input type="email" name="email" id="popup-email" class="input popup__input" placeholder="Ingresa tu email">
       <input type="password" name="password" id="popup-password" class="input popup__input" placeholder="Ingresa tu contraseña">
       <button 
@@ -36,17 +39,34 @@ export default {
     return {
       title: 'Login',
       btnString: 'Ingresar',
-      linkText: '¿No estás registrado?'
+      linkText: '¿No estás registrado?',
+      baseUrl: 'https://backend-project-mintic7.herokuapp.com/api/',
+      email: '',
+      password: ''
     };
   },
   methods: {
-    hidePopUp: () => {
+    hidePopUp() {
       const popUp = document.getElementsByClassName('popup')[0];
 
       popUp.classList.remove('popup--show');
     },
-    handleLogin: () => {
+    handleLogin() {
+      let base_url
 
+      const fetchData = async() => {
+        const response 
+      } 
+
+      //  Login
+      if(this.btnString === 'Ingresar') {
+        base_url = `${ this.baseUrl }/login/`
+      } 
+      
+      //  Register
+      else {
+
+      }
     },
     handleToRegister(e) {
       e.preventDefault();
