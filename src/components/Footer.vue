@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer class="footer" v-on:click="hidePopUp">
         <div class="footer__info">
             <h2 class="h2 h2--mini footer__info-title">
                 <i class="fas fa-desktop"></i>
@@ -25,3 +25,16 @@
         </div>
     </footer>
 </template>
+
+<script>
+export default {
+  name: 'Footer',
+  methods: {
+    hidePopUp: () => {
+      const popUp = document.getElementsByClassName('popup')[0];
+
+      popUp.classList.remove('popup--show');
+    }
+  }
+}
+</script>

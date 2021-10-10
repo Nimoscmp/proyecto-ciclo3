@@ -1,6 +1,6 @@
 <template>
   <header class="header header-desktop"> 
-    <nav class="header-desktop__nav">
+    <nav class="header-desktop__nav" v-on:click="hidePopUp">
       <span class="header-desktop__logo">
         <i class="fas fa-layer-group"></i>
       </span>
@@ -25,12 +25,32 @@
       </ul>
     </nav>
 
-    <button type="button" class="btn btn--secondary header-desktop__btn">Ingresar</button>
+    <button 
+      type="button" 
+      class="btn btn--secondary header-desktop__btn"
+      v-on:click="showPopUp"
+    >
+      Ingresar
+    </button>
   </header>
 </template>
 
 <script>
+export default {
+  name: 'Header',
+  methods: {
+    showPopUp: () => {
+      const popUp = document.getElementsByClassName('popup')[0];
 
+      popUp.classList.add('popup--show');
+    },
+    hidePopUp: () => {
+      const popUp = document.getElementsByClassName('popup')[0];
+
+      popUp.classList.remove('popup--show');
+    }
+  }
+}
 </script>
 
 

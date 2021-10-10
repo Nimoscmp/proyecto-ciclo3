@@ -1,5 +1,5 @@
 <template>
-  <section class="section home">
+  <section class="section home" v-on:click="hidePopUp">
     
     <div class="home__content">
       
@@ -54,3 +54,16 @@
 
   </section>
 </template>
+
+<script>
+export default {
+  name: 'Home',
+  methods: {
+    hidePopUp: () => {
+      const popUp = document.getElementsByClassName('popup')[0];
+
+      popUp.classList.remove('popup--show');
+    }
+  }
+}
+</script>

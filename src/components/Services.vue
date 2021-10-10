@@ -1,5 +1,5 @@
 <template>
-  <section class="section services">
+  <section class="section services" v-on:click="hidePopUp">
     <div class="services__text">
       <div class="services__text-intro">
         <h3 class="h3 services__subtitle welcome">
@@ -45,6 +45,13 @@ export default {
   name: 'Services',
   components: {
     BoxInfo
+  },
+  methods: {
+    hidePopUp: () => {
+      const popUp = document.getElementsByClassName('popup')[0];
+
+      popUp.classList.remove('popup--show');
+    }
   }
 }
 </script>

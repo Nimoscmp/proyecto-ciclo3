@@ -5,8 +5,23 @@
   position: fixed;
   z-index: 1000;
   top: 5.5rem;
-  right: 0;
+  right: -40%;
   background-color: var(--light-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.popup--show {
+  right: 0;
+}
+
+.popup__close {
+  display: block;
+  text-align: start;
+}
+
+.popup__close-icon {
+  color: var(--light-gray);
+  cursor: pointer;
 }
 
 .popup__title {
