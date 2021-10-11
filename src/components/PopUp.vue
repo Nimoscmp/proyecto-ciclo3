@@ -43,7 +43,6 @@
       >
       {{ linkText }}
     </a>
-    <p>{{ errorMessage }}</p>
   </aside>
 </template>
 
@@ -60,8 +59,7 @@ export default {
       baseUrl: 'https://backend-project-mintic7.herokuapp.com/api/',
       email: '',
       password: '',
-      responseData: {},
-      errorMessage: ''
+      responseData: {}
     };
   },
   methods: {
@@ -105,7 +103,9 @@ export default {
         const response = await fetch(completeUrl)
         const json_response = await response.json()
 
-        _this.responseData = json_response
+        _this.responseData = await json_response
+
+        checkData()
       } 
 
       //  Login
@@ -119,8 +119,6 @@ export default {
         base_url = `${ this.baseUrl }register?`
         fetchData(base_url)
       }
-
-      checkData()
     },
     handleToRegister(e) {
       e.preventDefault();

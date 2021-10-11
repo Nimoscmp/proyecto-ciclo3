@@ -4,7 +4,7 @@
     id="0"
     notificationClass="notification--error"
     title="Error"
-    message="Hubo un error al iniciar sesión"
+    message="Hubo un error"
   />
   <Notification 
     id="1"
@@ -17,6 +17,12 @@
     notificationClass="notification--success"
     title="Felicidades"
     message="Sesión iniciada con éxito"
+  />
+  <Notification 
+    id="3"
+    notificationClass="notification--success"
+    title="Nos vemos pronto"
+    message="Sesión cerrada con éxito"
   />
   <Header/>
   <HeaderMobile/>
