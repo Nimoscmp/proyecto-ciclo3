@@ -3,7 +3,7 @@
     <span class="popup__close">
       <i 
         class="fas fa-times fa-2x popup__close-icon"
-        v-on:click="hidePopUp"
+        v-on:click="hideNotificationAll"
       ></i>
     </span>
     <h2 class="h2 popup__title">
@@ -73,17 +73,8 @@ export default {
       let base_url
       let _this = this
 
-      const showError = () => {
-        console.log('Error')
-      }
-      
-      const showSuccess = () => {
-        console.log('Success')
-      }
-
       const saveName = () => {
         _this.nameToShow = _this.responseData
-        console.log(_this.nameToShow)
       }
 
       const resetValues = () => {
@@ -93,20 +84,21 @@ export default {
 
       const checkData = () => {
         if(_this.responseData.status === 200) {
-          showSuccess()
-          } else {
-          showError()
+          _this.showNotification(2)
+          saveName()
+          _this.hidePopUp()
+        } else if(_this.responseData.status === 500 && _this.responseData.message === 'Invalid email or password') {
+          _this.showNotification(1)
+        } else {
+          _this.showNotification(0)
         }
 
-        saveName()
         resetValues()
-        _this.hidePopUp()
       }
 
       const fetchData = async(url) => {
 
         const completeUrl = `${ url }email=${ _this.email }&password=${_this.password}`
-        console.log(completeUrl)
 
         const response = await fetch(completeUrl)
         const json_response = await response.json()
@@ -140,8 +132,32 @@ export default {
         this.btnString = 'Ingresar'
         this.linkText = '¿No estás registrado?'
       }
+    },
+    hideNotificationAll() {
+      const notification = document.getElementsByClassName('notification');
+
+      notification.forEach(element => {
+        if (element.className.includes('notification--show')) {
+          element.classList.remove('notification--show');
+        }
+      });
+    },
+    hideNotification(id) {
+      const notification = document.getElementsByClassName('notification')[id];
+
+      notification.classList.remove('notification--show');
+    },
+    showNotification(id) {
+      let _this = this
+
+      const notification = document.getElementsByClassName('notification')[id];
+
+      notification.classList.add('notification--show');
+
+      setTimeout(() => {
+        _this.hideNotification(id)
+      }, 4000);
     }
   }
-  
 }
 </script>

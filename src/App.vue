@@ -1,5 +1,23 @@
 <template>
   <PopUp />
+  <Notification 
+    id="0"
+    notificationClass="notification--error"
+    title="Error"
+    message="Hubo un error al iniciar sesión"
+  />
+  <Notification 
+    id="1"
+    notificationClass="notification--error"
+    title="Error"
+    message="La contraseña o email no son correctos"
+  />
+  <Notification 
+    id="2"
+    notificationClass="notification--success"
+    title="Felicidades"
+    message="Sesión iniciada con éxito"
+  />
   <Header/>
   <HeaderMobile/>
   <Home/>
@@ -12,6 +30,7 @@
 <script>
 
 import PopUp from './components/PopUp';
+import Notification from './components/Notification';
 import Header from './components/Header';
 import HeaderMobile from './components/HeaderMobile';
 import Home from './components/Home';
@@ -24,6 +43,7 @@ export default {
   name: 'App',
   components: {
     PopUp,
+    Notification,
     Header,
     HeaderMobile,
     Home,
