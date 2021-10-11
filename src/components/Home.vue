@@ -1,10 +1,10 @@
 <template>
-  <section class="section home">
+  <section class="section home" v-on:click="hidePopUp">
     
     <div class="home__content">
       
       <div class="home__main">
-        <p class="welcome home__welcome">Bienvenido</p>
+        <p class="welcome home__welcome">Bienvenido(a) {{ data }}</p>
         <h1 class="h1">
           Somos PG Learning
         </h1>
@@ -20,7 +20,7 @@
       </div>
 
       <div class="home__wrapper">
-          <div class="home__options">
+          <div class="home__options" v-on:click="changeStatus">
               <span class="home__icon-wrapper">
                 <i class="fas fa-pencil-alt fa-2x"></i>
               </span>
@@ -54,3 +54,29 @@
 
   </section>
 </template>
+
+<script>
+import store from '../store'
+
+export default {
+  name: 'Home',
+  methods: {
+    hidePopUp: () => {
+      const popUp = document.getElementsByClassName('popup')[0];
+
+      popUp.classList.remove('popup--show');
+    },
+    changeStatus () {
+      this.$store.state.session = true
+    }
+  },
+  store,
+  computed: {
+    data: {
+      get () {
+        return this.$store.state.data.email
+      }
+    }
+  }
+}
+</script>

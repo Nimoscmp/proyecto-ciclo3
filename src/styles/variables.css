@@ -9,6 +9,10 @@
   --light-color: #fff;
   --light-gray: #666666;
   --blue-gray: #878B90;
+  --color-success: #004606;
+  --color-bg-success: #01eb15;
+  --color-error: #370800;
+  --color-bg-error: #eb2401;
 
   /*  Fonts  */
   --font-primary: 'Karla', sans-serif;

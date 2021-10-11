@@ -1,0 +1,47 @@
+.notification {
+  width: 24rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  position: fixed;
+  z-index: 1000;
+  bottom: 2rem;
+  left: -24rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.notification--show {
+  left: 2rem;
+}
+
+.notification__close {
+  padding: 0.25rem;
+  display: block;
+  text-align: end;
+}
+
+.notification__close-icon {
+  font-size: 1rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.notification__title {
+  text-align: start;
+  margin: 0 0 1rem 0;
+}
+
+.notification__message {
+  text-align: start;
+  margin: 0;
+}
+
+.notification--success {
+  color: var(--color-success);
+  background-color: var(--color-bg-success);
+}
+
+.notification--error {
+  color: var(--color-error);
+  background-color: var(--color-bg-error);
+}
