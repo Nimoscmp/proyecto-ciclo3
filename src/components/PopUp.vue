@@ -43,6 +43,7 @@
       >
       {{ linkText }}
     </a>
+    <p>{{ errorMessage }}</p>
   </aside>
 </template>
 
@@ -57,7 +58,9 @@ export default {
       baseUrl: 'https://backend-project-mintic7.herokuapp.com/api/',
       email: '',
       password: '',
-      responseData: {}
+      responseData: {},
+      errorMessage: '',
+      nameToShow: ''
     };
   },
   methods: {
@@ -70,33 +73,60 @@ export default {
       let base_url
       let _this = this
 
+      const showError = () => {
+        console.log('Error')
+      }
+      
+      const showSuccess = () => {
+        console.log('Success')
+      }
+
+      const saveName = () => {
+        _this.nameToShow = _this.responseData
+        console.log(_this.nameToShow)
+      }
+
+      const resetValues = () => {
+        _this.email = ''
+        _this.password = ''
+      }
+
+      const checkData = () => {
+        if(_this.responseData.status === 200) {
+          showSuccess()
+          } else {
+          showError()
+        }
+
+        saveName()
+        resetValues()
+        _this.hidePopUp()
+      }
+
       const fetchData = async(url) => {
 
-        const completeUrl = `${ url }${ _this.email }&${_this.password}`
+        const completeUrl = `${ url }email=${ _this.email }&password=${_this.password}`
+        console.log(completeUrl)
 
-        const response = await fetch(completeUrl, {
-          headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'http://localhost:8080/'
-          }
-        })
+        const response = await fetch(completeUrl)
         const json_response = await response.json()
 
         _this.responseData = json_response
-        console.log(_this.responseData)
       } 
 
       //  Login
       if(this.btnString === 'Ingresar') {
-        base_url = `${ this.baseUrl }/login?`
+        base_url = `${ this.baseUrl }login?`
         fetchData(base_url)
       } 
       
       //  Register
       else {
-        base_url = `${ this.baseUrl }/register?`
+        base_url = `${ this.baseUrl }register?`
         fetchData(base_url)
       }
+
+      checkData()
     },
     handleToRegister(e) {
       e.preventDefault();
