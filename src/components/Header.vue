@@ -28,7 +28,15 @@
     <button 
       type="button" 
       class="btn btn--secondary header-desktop__btn"
+      v-if="session"
+    >
+      Cerrar sesión
+    </button>
+    <button 
+      type="button" 
+      class="btn btn--secondary header-desktop__btn"
       v-on:click="showPopUp"
+      v-else
     >
       Ingresar
     </button>
@@ -48,6 +56,13 @@ export default {
       const popUp = document.getElementsByClassName('popup')[0];
 
       popUp.classList.remove('popup--show');
+    }
+  },
+  computed: {
+    session: {
+      get () {
+        return this.$store.state.session
+      }
     }
   }
 }

@@ -3,7 +3,7 @@
     <span class="popup__close">
       <i 
         class="fas fa-times fa-2x popup__close-icon"
-        v-on:click="hideNotificationAll"
+        v-on:click="hidePopUp"
       ></i>
     </span>
     <h2 class="h2 popup__title">
@@ -48,6 +48,8 @@
 </template>
 
 <script>
+import store from '../store'
+
 export default {
   name: 'PopUp',
   data() {
@@ -59,8 +61,7 @@ export default {
       email: '',
       password: '',
       responseData: {},
-      errorMessage: '',
-      nameToShow: ''
+      errorMessage: ''
     };
   },
   methods: {
@@ -74,7 +75,8 @@ export default {
       let _this = this
 
       const saveName = () => {
-        _this.nameToShow = _this.responseData
+        _this.$store.state.data.email = _this.responseData.data.email;
+        _this.$store.state.session = true
       }
 
       const resetValues = () => {
@@ -133,15 +135,6 @@ export default {
         this.linkText = '¿No estás registrado?'
       }
     },
-    hideNotificationAll() {
-      const notification = document.getElementsByClassName('notification');
-
-      notification.forEach(element => {
-        if (element.className.includes('notification--show')) {
-          element.classList.remove('notification--show');
-        }
-      });
-    },
     hideNotification(id) {
       const notification = document.getElementsByClassName('notification')[id];
 
@@ -157,6 +150,14 @@ export default {
       setTimeout(() => {
         _this.hideNotification(id)
       }, 4000);
+    }
+  },
+  store,
+  computed: {
+    data: {
+      get () {
+        return this.$store.state.data.email
+      }
     }
   }
 }

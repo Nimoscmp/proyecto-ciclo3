@@ -5,7 +5,7 @@
     <span class="notification__close">
       <i 
           class="fas fa-times notification__close-icon"
-          v-on:click="hideNotification"
+          v-on:click="hideNotificationAll"
       ></i>
     </span>
     <h2 class="notification__title">{{ title }}</h2>
@@ -20,6 +20,17 @@ export default {
     notificationClass: String,
     title: String,
     message: String
+  },
+  methods: {
+    hideNotificationAll() {
+      const notification = document.getElementsByClassName('notification');
+
+      notification.forEach(element => {
+        if (element.className.includes('notification--show')) {
+          element.classList.remove('notification--show');
+        }
+      });
+    }
   }
 }
 </script>
