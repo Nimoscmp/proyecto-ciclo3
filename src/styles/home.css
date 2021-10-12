@@ -1,5 +1,5 @@
 .home {
-  margin: 0 auto;
+  margin: 5.5rem auto 0;
   background-color: var(--primary-color);
   display: flex;
   align-items: center;

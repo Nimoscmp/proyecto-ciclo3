@@ -43,6 +43,7 @@
       >
       {{ linkText }}
     </a>
+    <p class="popup__error">{{ errorMessage }}</p>
   </aside>
 </template>
 
@@ -59,14 +60,26 @@ export default {
       baseUrl: 'https://backend-project-mintic7.herokuapp.com/api/',
       email: '',
       password: '',
-      responseData: {}
+      responseData: {},
+      errorMessage: ''
     };
   },
   methods: {
+    validateData() {
+      const email = this.email
+      const password = this.password
+
+      if(email.trim() !== '' && (password !== '')) {
+        this.errorMessage = ''
+      } else {
+        this.errorMessage = 'Llena los campos de email y contraseña'
+      }
+    },
     hidePopUp() {
       const popUp = document.getElementsByClassName('popup')[0];
 
       popUp.classList.remove('popup--show');
+      this.errorMessage = ''
     },
     handleLogin() {
       let base_url
@@ -108,6 +121,13 @@ export default {
         checkData()
       } 
 
+      //  Validate data
+      _this.validateData()
+
+      if(_this.errorMessage) {
+        return
+      }
+
       //  Login
       if(this.btnString === 'Ingresar') {
         base_url = `${ this.baseUrl }login?`
@@ -132,6 +152,8 @@ export default {
         this.btnString = 'Ingresar'
         this.linkText = '¿No estás registrado?'
       }
+
+      this.errorMessage = ''
     },
     hideNotification(id) {
       const notification = document.getElementsByClassName('notification')[id];

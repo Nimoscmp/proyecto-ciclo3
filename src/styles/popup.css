@@ -58,3 +58,10 @@
 .popup__link-register:visited {
   color: var(--secondary-color);
 }
+
+.popup__error {
+  font-size: var(--font-xs);
+  text-align: start;
+  text-transform: uppercase;
+  color: var(--color-bg-error);
+}
