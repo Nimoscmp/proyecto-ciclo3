@@ -1,5 +1,5 @@
 <template>
-	<section class="section about" v-on:click="hidePopUp">
+	<section id="about" ref="about" class="section about scroll-element" v-on:click="hidePopUp">
 		<div class="about__img">
 			<div class="about__img-bg">
 				<img src="../assets/java.png" alt="java-icon" class="about__img-img">

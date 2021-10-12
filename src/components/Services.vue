@@ -1,5 +1,5 @@
 <template>
-  <section class="section services" v-on:click="hidePopUp">
+  <section id="services" ref="services" class="section services scroll-element" v-on:click="hidePopUp">
     <div class="services__text">
       <div class="services__text-intro">
         <h3 class="h3 services__subtitle welcome">

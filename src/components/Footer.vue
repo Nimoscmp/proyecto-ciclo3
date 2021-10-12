@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer" v-on:click="hidePopUp">
+    <footer id="contact" ref="contact" class="footer scroll-element" v-on:click="hidePopUp">
         <div class="footer__info">
             <h2 class="h2 h2--mini footer__info-title">
                 <i class="fas fa-desktop"></i>

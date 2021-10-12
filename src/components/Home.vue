@@ -1,5 +1,5 @@
 <template>
-  <section class="section home" v-on:click="hidePopUp">
+  <section id="home" ref="home" class="section home scroll-element" v-on:click="hidePopUp">
     
     <div class="home__content">
       

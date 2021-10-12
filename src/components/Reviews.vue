@@ -1,5 +1,5 @@
 <template>
-    <section class="section reviews" v-on:click="hidePopUp">
+    <section id="reviews" ref="reviews" class="section reviews scroll-element" v-on:click="hidePopUp">
         <div class="reviews__text">
             <h3 class="welcome h3 reviews__subtitle">
                 Testimonios
