@@ -6,21 +6,25 @@
       </span>
       
       <h2 class="h2 header-desktop__title">
-        Subtítulo
+        <a href="#home" v-on:click="handleScroll" class="header-desktop__title-link scroll-link">PG Learning</a>
       </h2>
 
       <ul class="header-desktop__list">
         <li class="header-desktop__list-item">
-          <a href="" class="header-desktop__list-link">Quienes somos</a>
+          <a href="#about-us" class="header-desktop__list-link scroll-link"
+          v-on:click="handleScroll">Quienes somos</a>
         </li>
         <li class="header-desktop__list-item">
-          <a href="" class="header-desktop__list-link">Servicios</a> 
+          <a href="#services" class="header-desktop__list-link scroll-link"
+          v-on:click="handleScroll">Servicios</a> 
         </li>
         <li class="header-desktop__list-item">
-          <a href="" class="header-desktop__list-link">Testimonios</a> 
+          <a href="#reviews" class="header-desktop__list-link scroll-link"
+          v-on:click="handleScroll">Testimonios</a> 
         </li>
         <li class="header-desktop__list-item">
-          <a href="" class="header-desktop__list-link">Contacto</a> 
+          <a href="#contact" class="header-desktop__list-link scroll-link"
+          v-on:click="handleScroll">Contacto</a> 
         </li>
       </ul>
     </nav>
